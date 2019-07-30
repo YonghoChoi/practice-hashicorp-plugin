@@ -1,0 +1,8 @@
+@echo off
+
+set GO111MODULE=on
+set GOARCH=amd64
+set GOOS=windows
+
+go mod tidy
+go build -o .\plugin-example.exe
